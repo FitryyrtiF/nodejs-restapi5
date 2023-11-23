@@ -8,6 +8,7 @@ const PORT = process.env.SERVER_PORT;
 
 dbInit();
 
+//json and urlencoded act as body parser to get data from POST requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
